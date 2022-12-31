@@ -1,1 +1,62 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Consolas', "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "yu-gothic";
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: rgba(white, 0.99);
+  height: 70px;
+  z-index: 100;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  max-width: 1500px;
+  nav {
+    position: absolute;
+    inset: 0;
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    a {
+      margin-right: 0.5rem;
+      margin-bottom: 1rem;
+      padding-right: 0.5rem;
+      border-right: 1px lightgray solid;
+      color: #0E6DFE;
+      text-decoration: none;
+      &:last-child {
+        margin-right: 0;
+        padding-right: 0;
+        border-right: none;
+      }
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+main {
+  margin-top: 70px;
+  padding: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1200px;
+}
+
+.link {
+  text-decoration: none;
+  color: #0E6DFE;
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+}
