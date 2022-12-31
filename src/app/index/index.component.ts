@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import setting from 'src/setting';
 
 @Component({
   selector: 'app-index',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./index.component.scss']
 })
 export class IndexComponent {
-
+  title = setting.title;
 }

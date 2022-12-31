@@ -1,5 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 
+// @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
   margin: 0;
   padding: 0;
@@ -52,11 +56,23 @@ main {
   max-width: 1200px;
 }
 
-.link {
+a, .link {
   text-decoration: none;
   color: #0E6DFE;
   cursor: pointer;
   &:hover {
     text-decoration: underline;
   }
+}
+
+ol, ul {
+  margin-left: 1rem;
+}
+
+p, div, ol, ul {
+  margin-top: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 1.5rem;
 }
