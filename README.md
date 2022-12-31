@@ -12,7 +12,7 @@ yarn dev
 yarn build
 ```
 
-本番用にビルドすると、「./dist/simple-angular-study」ディレクトリにSPA用のデータが、「./dist/static」ディレクトリにSSGのデータが出力されます。  
+本番用にビルドすると、「./dist/simple-angular-study」ディレクトリにSPA用のデータが、「./dist/static」ディレクトリにSSGのデータが出力されます！  
 
 ## 自分用メモ
 
