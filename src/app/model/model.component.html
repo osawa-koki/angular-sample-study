@@ -1,1 +1,36 @@
-<p>model works!</p>
+<h2>Reactive Form 🤔🤔🤔</h2>
+<p>フォームクラスを使用することでデータを一括して管理します。</p>
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+  <table class="my-4">
+    <tbody>
+      <tr>
+        <th class="py-1 px-2">name</th>
+        <td class="py-1 px-2">
+          <input type="name" formControlName="name" class="w-56 text-base" />
+          <p *ngIf="!loginForm.get('name')?.valid" class="bg-red-100 border border-red-400 text-red-700 m-1 px-2 py-1 rounded relative" role="alert">invalid...</p>
+        </td>
+        <td>名前</td>
+      </tr>
+      <tr>
+        <th class="py-1 px-2">email</th>
+        <td class="py-1 px-2">
+          <input type="email" formControlName="email" class="w-56 text-base" />
+          <p *ngIf="!loginForm.get('email')?.valid" class="bg-red-100 border border-red-400 text-red-700 m-1 px-2 py-1 rounded relative" role="alert">invalid...</p>
+        </td>
+        <td>メールアドレス</td>
+      </tr>
+      <tr>
+        <th class="py-1 px-2">password</th>
+        <td class="py-1 px-2">
+          <input type="password" formControlName="password" class="w-56 text-base" />
+          <p *ngIf="!loginForm.get('password')?.valid" class="bg-red-100 border border-red-400 text-red-700 m-1 px-2 py-1 rounded relative" role="alert">invalid...</p>
+        </td>
+        <td>パスワード(8文字以上)</td>
+      </tr>
+      <tr>
+        <td class="py-1 px-2" colspan="3" class="text-center"><button class="bg-red-500 hover:bg-red-400 text-white rounded px-4 py-2">to json</button></td>
+      </tr>
+    </tbody>
+  </table>
+</form>
+<pre *ngIf="json !== ''" class="my-2 p-2 border">{{ json }}</pre>

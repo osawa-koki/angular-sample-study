@@ -54,7 +54,7 @@ main {
   margin-left: auto;
   margin-bottom: 3rem;
   padding: 1rem;
-  max-width: 1200px;
+  max-width: 1000px;
 }
 
 a, .link {
@@ -87,6 +87,13 @@ a, button {
   cursor: pointer;
 }
 
-th {
-  text-align: center;
+table {
+  border-collapse: collapse;
+  th {
+    text-align: center;
+  }
+  th, td {
+    padding: 0.2rem 0.5rem;
+    border: 1px lightgray solid;
+  }
 }
