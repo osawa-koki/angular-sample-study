@@ -6,7 +6,7 @@
     "start": "ng serve",
     "dev": "yarn develop",
     "develop": "ng serve --open",
-    "build": "ng build --base-href=/simple-angular-study/ && npx scully",
+    "build": "ng build --base-href=/angular-sample-study/ && npx scully",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
