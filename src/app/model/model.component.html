@@ -28,7 +28,7 @@
         <td>パスワード(8文字以上)</td>
       </tr>
       <tr>
-        <td class="py-1 px-2" colspan="3" class="text-center"><button class="bg-red-500 hover:bg-red-400 text-white rounded px-4 py-2">to json</button></td>
+        <td class="py-1 px-2" colspan="3" class="text-center"><button class="text-white rounded px-4 py-2" [class.bg-gray-500]="!loginForm.valid" [class.bg-red-500.hover:bg-red-400]="loginForm.valid">to json ({{ loginForm.valid ? 'ok' : 'ng' }})</button></td>
       </tr>
     </tbody>
   </table>
