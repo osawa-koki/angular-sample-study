@@ -1,6 +1,4 @@
 
-import setting from "./setting";
-
 type Page = {
   name: string;
   path: string;
@@ -24,7 +22,7 @@ const _pages: Page[] = [
 const pages = _pages.map((page) => {
   return {
     ...page,
-    path: `${setting.subdir}${page.path}`,
+    path: `${page.path}`,
   };
 });
 
