@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
 import { IndexComponent } from './index/index.component';
 import { FormComponent } from './form/form.component';
+import { ModelComponent } from './model/model.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { FormComponent } from './form/form.component';
     IndexComponent,
     AboutComponent,
     FormComponent,
+    ModelComponent,
   ],
   imports: [
     BrowserModule,
