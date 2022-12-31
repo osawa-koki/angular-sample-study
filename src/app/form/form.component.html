@@ -1,0 +1,16 @@
+<div class="my-1 p-1 text-lg">I love {{ name }} 💓</div>
+<div>
+  <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Enter your name</label>
+  <input (input)="InputName($event)" [value]="name" type="text" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 box-border" placeholder="Osawa Koki" required>
+</div>
+<hr />
+<div class="my-1 p-1 text-lg">counter {{ count }} 💓</div>
+<button (click)="Countdown()" class="bg-red-500 hover:bg-red-400 text-white rounded px-4 py-2">-1</button>
+<button (click)="Countup()" class="bg-blue-600 hover:bg-blue-500 text-white rounded px-4 py-2">+1</button>
+<hr />
+<div>
+  <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Enter your email</label>
+  <input (input)="InputEmail($event)" [value]="email" type="text" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 box-border" placeholder="osawa-koki@example.com" required>
+</div>
+<div *ngIf="email === 'osawa-koki@example.com'; else elseBlock">Wow! same to me!!!</div>
+<ng-template #elseBlock><div>It's not mine...</div></ng-template>

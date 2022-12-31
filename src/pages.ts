@@ -15,6 +15,10 @@ const _pages: Page[] = [
     name: "About",
     path: "/about",
   },
+  {
+    name: "Form",
+    path: "/form",
+  },
 ];
 
 const pages = _pages.map((page) => {
