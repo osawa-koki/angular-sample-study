@@ -1,2 +1,60 @@
-<p>I am an about page🦍</p>
-<div class="link" routerLink="/">top</div>
+<h2>Angularの特徴</h2>
+<p>Angularを学習し始めて3時間程度しかたっていませんが、Next.js(React)やNuxt.js(Vue.js)と比べて感じたことを紹介します。</p>
+<h3>そこまで古さを感じない。</h3>
+<p>
+  <a href="https://github.com/s-usukura">僕の高校時代のとある友達</a>は"JQueryみたい"、"普通に時代遅れ"、なんていっていましたが、そこまで古さを感じることはありません。
+</p>
+<h3>強いMVC</h3>
+<p>
+  AngularはMVCを強く感じるディレクトリ構成となっています。
+</p>
+<pre class="my-4 p-4 border border-black border-solid">
+src
+├── app
+│   ├── about
+│   │   ├── about.component.css
+│   │   ├── about.component.html
+│   │   ├── about.component.spec.ts
+│   │   └── about.component.ts
+│   ├── app.component.css
+│   ├── app.component.html
+│   ├── app.component.spec.ts
+│   ├── app.component.ts
+│   ├── app.module.ts
+│   ├── app-routing.module.ts
+│   ├── home
+│   │   ├── home.component.css
+│   │   ├── home.component.html
+│   │   ├── home.component.spec.ts
+│   │   └── home.component.ts
+│   └── shared
+│       ├── footer
+│       │   ├── footer.component.css
+│       │   ├── footer.component.html
+│       │   ├── footer.component.spec.ts
+│       │   └── footer.component.ts
+│       └── header
+│           ├── header.component.css
+│           ├── header.component.html
+│           ├── header.component.spec.ts
+│           └── header.component.ts
+├── assets
+│   ├── .gitkeep
+│   └── img
+│       └── logo.svg
+├── environments
+│   ├── environment.prod.ts
+│   └── environment.ts
+├── favicon.ico
+├── index.html
+├── main.ts
+├── polyfills.ts
+├── styles.css
+├── test.ts
+└── tsconfig.app.json
+</pre>
+HTML・CSS・JSを分けて記述するので、機能の分離がしっかりしている反面、ディレクトリ構成が複雑になってしまいます。
+<h3>tailwindとの相性が悪い</h3>
+<p>
+  tailwindはCSSのクラスを追加するだけでスタイルを適用できるので、HTMLの記述がシンプルになります。<br />しかし、AngularはHTMLの記述が多くなるので、tailwindとの相性が悪いと感じました。<br />もっとも、tailwindに関しても学習を初めて1時間程度しか経過指定にため、よくわかっていませんが、、、
+</p>
