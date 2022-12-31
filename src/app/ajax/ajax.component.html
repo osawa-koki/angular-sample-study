@@ -1,1 +1,21 @@
-<p>ajax works!</p>
+<h2>Start 'Ajax'ing</h2>
+<p>
+  AngularではfetchやXMLHttpRequestを使わずに、HTTP通信を行うことができます。<br />これは、AngularのHttpClientモジュールを使うことで実現できます。
+</p>
+<button (click)="getLanguages()" class="my-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">fetch Data 😗😗😗</button>
+<table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+  <thead>
+    <tr>
+      <th>名称</th>
+      <th>トレンド?</th>
+      <th>誕生年</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let language of languages">
+      <td class="bg-green-100 m-2 p-2">{{ language.name }}</td>
+      <td class="bg-green-100 m-2 p-2">{{ language.on_trending }}</td>
+      <td class="bg-green-100 m-2 p-2">{{ language.birth_year }}</td>
+    </tr>
+  </tbody>
+</table>

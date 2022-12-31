@@ -1,0 +1,32 @@
+[
+  {
+    "name": "TypeScript",
+    "is_static": true,
+    "on_trending": true,
+    "birth_year": 2012
+  },
+  {
+    "name": "C#",
+    "is_static": true,
+    "on_trending": true,
+    "birth_year": 2000
+  },
+  {
+    "name": "Cobol",
+    "is_static": true,
+    "on_trending": false,
+    "birth_year": 1959
+  },
+  {
+    "name": "Python",
+    "is_static": true,
+    "on_trending": true,
+    "birth_year": 1991
+  },
+  {
+    "name": "Fortran",
+    "is_static": true,
+    "on_trending": false,
+    "birth_year": 1957
+  }
+]

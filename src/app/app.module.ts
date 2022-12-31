@@ -8,6 +8,7 @@ import { IndexComponent } from './index/index.component';
 import { FormComponent } from './form/form.component';
 import { ModelComponent } from './model/model.component';
 import { AjaxComponent } from './ajax/ajax.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { AjaxComponent } from './ajax/ajax.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
