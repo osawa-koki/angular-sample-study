@@ -9,4 +9,14 @@ import { Component } from '@angular/core';
 })
 export class AboutComponent {
 
+  constructor() { }
+
+  JumpToUsukura(event: Event) {
+    event.preventDefault();
+    const href = (event.target as HTMLAnchorElement).href;
+    if (Math.random() < 0.2) {
+      window.open(href, '_blank');
+    }
+  }
+
 }
