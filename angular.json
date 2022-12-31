@@ -2,6 +2,7 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "newProjectRoot": "projects",
+  "defaultProject": "angular-sample-study",
   "projects": {
     "angular-sample-study": {
       "projectType": "application",
