@@ -4,7 +4,7 @@ type Page = {
   path: string;
 };
 
-const _pages: Page[] = [
+const pages: Page[] = [
   {
     name: "Home",
     path: "/",
@@ -18,12 +18,5 @@ const _pages: Page[] = [
     path: "/form",
   },
 ];
-
-const pages = _pages.map((page) => {
-  return {
-    ...page,
-    path: `${page.path}`,
-  };
-});
 
 export default pages;
