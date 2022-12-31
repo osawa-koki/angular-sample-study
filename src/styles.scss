@@ -54,7 +54,7 @@ main {
   margin-left: auto;
   margin-bottom: 3rem;
   padding: 1rem;
-  max-width: 1200px;
+  max-width: 1000px;
 }
 
 a, .link {
@@ -81,4 +81,19 @@ h1, h2, h3, h4, h5, h6 {
 hr {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+}
+
+a, button {
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+  th {
+    text-align: center;
+  }
+  th, td {
+    padding: 0.2rem 0.5rem;
+    border: 1px lightgray solid;
+  }
 }

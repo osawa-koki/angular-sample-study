@@ -17,6 +17,14 @@ const pages: Page[] = [
     name: "Form",
     path: "/form",
   },
+  {
+    name: "Model",
+    path: "/model",
+  },
+  {
+    name: "Ajax",
+    path: "/ajax",
+  },
 ];
 
 export default pages;
